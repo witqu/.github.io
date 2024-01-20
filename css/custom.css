@@ -1,0 +1,33 @@
+:root {
+  /*  去掉文章详情页，标题下的头像 */
+  --post-author-avatar: none;
+
+  /* 设置 Header 头部的背景毛玻璃效果程度，值越小，透明度越高 */
+  --header-backdrop-filter-blur: 1px;
+
+  /*定制首屏开启状态下的头部字体颜色（白昼模式）*/
+  --first-screen-header-font-color-light: #ffffff;
+  /*定制首屏的文字颜色（白昼模式）*/
+  --first-screen-font-color-light: #ffffff;
+  /*定制首屏的图标颜色（白昼模式） */
+  --first-screen-icon-color-light: #ffffff;
+
+  /*定制首屏开启状态下的头部字体颜色（暗黑模式）*/
+  --first-screen-header-font-color-dark: #d5dae0;
+  /*定制首屏的文字颜色（暗黑模式）*/
+  --first-screen-font-color-dark: #d5dae0;
+  /*定制首屏的图标颜色（暗黑模式）*/
+  --first-screen-icon-color-dark: #d5dae0;
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+     --header-transparent-background-1: rgba(34,39,46,0.28);
+     --header-transparent-background-2: rgba(34,39,46,0.4);
+   }
+}
+
+.light-mode {
+  --header-transparent-background-1: rgba(34,39,46,0.28);
+  --header-transparent-background-2: rgba(34,39,46,0.4);
+}
